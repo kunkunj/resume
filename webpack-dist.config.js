@@ -9,6 +9,7 @@ const EndWebpackPlugin = require('end-webpack-plugin');
 const { WebPlugin } = require('web-webpack-plugin');
 const ghpages = require('gh-pages');
 
+
 function publishGhPages() {
   return new Promise((resolve, reject) => {
     ghpages.publish(outputPath, { dotfiles: true }, (err) => {
