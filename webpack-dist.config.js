@@ -99,7 +99,7 @@ module.exports = {
       // 自定义域名
       // fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'ghresume.heiwawa.xyz');
 
-      // await publishGhPages();
+      await publishGhPages();
 
       // 调用 Chrome 渲染出 PDF 文件
       const chromePath = findChrome();
@@ -108,7 +108,7 @@ module.exports = {
       ]);
 
       // 重新发布到 ghpages
-      // await publishGhPages();
+      await publishGhPages();
     }),
   ]
 };
