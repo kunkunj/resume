@@ -29,9 +29,8 @@
       <section class="info">
         <ul>
           <li>男 · 26岁</li>
-          <li>四川交通职业技术学院 · 软件技术 · 专科</li>
-          <li>成都理工大学 · 计算机科学与技术 · 在读本科</li>
-          <li>离职 · 随时到岗</li>
+          <li>成都理工大学 · 计算机科学与技术 · 本科</li>
+          <li>离职 · 月内到岗</li>
         </ul>
       </section>
       <section class="contact">
@@ -100,18 +99,50 @@
             <!--经历:工作-->
             <div class="item">
               <header class="item-hd">
-                <h3 class="item-name">成都决云科技有限公司</h3>
-                <span class="item-time">2024.01 至 今</span>
+                <h3 class="item-name">成都抉云科技有限公司</h3>
+                <span class="item-time">2023.12 至 今</span>
                 <a class="btn item-more" href="#">工作</a>
               </header>
               <div class="item-bd">
-                <p class="item-des">前端组长，包括：</p>
+                <p class="item-des">前端组长、前端架构师，包括：</p>
                 <ul class="section-content">
                   <li>
-                    《MACROCLOUD》平台的架构和开发
+                    采用微前端框架乾坤、vue2.js、ant-design-vue对公司核心产品《MACROCLOUD》平台的底层框架搭建
+                      <br/>
+                      <span style="margin-left: 1em;">（1）实现乾坤和子应用的通信工具（类似Pinia）</span>
+                      <br/>
+                      <span style="margin-left: 1em;">（2）实现一个核心环境变量，为不同的子应用授权不同的api方法（类似微信公众号的js-sdk授权wx.config）</span>
+                      <br/>
+                      <span style="margin-left: 1em;">（3）实现子应用双入口，不仅能走乾坤加载，也能独立部署</span>
                   </li>
                   <li>
-                    技术选型、性能调优、框架搭建、系统架构 
+                    调试vue源码，实现vue-plus.js，对vue的插件、组件、指令系统二开；使乾坤内部子应用的体积缩减90%，极大提升了运行性能和加载速率           
+                  </li>
+                  <li>
+                    搭建内部组件库，并定制开发webpack的loader、plugin实现提取组件的注释自动化为组件生成文档，无需自己写markdown，方便其它开发者使用
+                  </li>
+                  <li>
+                    搭建web-component库，实现在某些特殊情况需要沙箱隔离时的组件
+                  </li>
+                  <li>
+                    搭建内部node脚手架cli库
+                      <br/>
+                      <span style="margin-left: 1em;">（1）按需生成模板代码（类似vue-cli）</span>
+                      <br/>
+                      <span style="margin-left: 1em;">（2）组件库打包工具</span>
+                      <br/>
+                      <span style="margin-left: 1em;">（3）svg转换器（类似svg-sprite-loader但解决svg太多时svg-sprite-loader生成的内容太多，造成页面卡顿）</span>
+                  </li>
+                  <li>
+                    搭建公司低代码底层核心架构，实现内部低代码平台，打破传统低代码只通过json渲染的方式，实现json组件预加载的方式，极大提高了渲染速率
+                      <br/>
+                      <span style="margin-left: 1em;">（1）解释渲染：传统低代码架构json渲染页面，当json太大，组件很多的时候容易渲染效率低</span>
+                      <br/>
+                      <span style="margin-left: 1em;">（2）编译渲染：用node脚本把json生成物理代码文件，并对此预渲染，使在低代码渲染时不需要实时加载运行组件代码，极大提升了渲染效率</span>
+                      <br/>
+                  </li>
+                  <li>
+                    解决前端组员开发遇到的各种疑难，并培训相关前端知识
                   </li>
                 </ul>
               </div>
@@ -526,10 +557,14 @@
                   <li>项目周期：2024.01 至 今</li>
                   <li>项目介绍：军工飞机工艺零级和流程产品管理平台。</li>
                   <li>
-                    <b>我做了啥</b>：1. 项目选型。 2. 基础架构。 3.全功能开发。 4. bug修复
+                    <b>疑难bug：</b>乾坤加载子应用时，子应用包体积大小有白屏时间。
+                    <br/>
+                    <b style="margin: 0 0 0 18px;">解决办法：</b>整合了ui框架和公用组件，外链加载共用资源，子应用共享vue，重写vue了部分方法，实现qiankun-vue
+                    <br/>
+                    <b style="margin: 0 0 0 18px;">成就效果：</b>加载子应用由最慢的3s到100ms以内，几乎无感操作，达到了单页面应用水平。
                   </li>
                   <li>
-                    技术栈：vue3、typescript、axios、elementui、swiperjs
+                    技术栈：vue、乾坤
                   </li>
                 </ul>
               </div>
@@ -565,7 +600,7 @@
                     <b>我做了啥</b>：1. 项目选型。 2. 基础架构。 3. bug修复
                   </li>
                   <li>
-                    技术栈：vue、乾坤
+                    技术栈：uniapp
                   </li>
                 </ul>
               </div>
